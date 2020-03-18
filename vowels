@@ -1,0 +1,41 @@
+public class Vowels
+ {
+
+	public static void main(String[] args) {
+        java.util.Scanner in = new java.util.Scanner(System.in);
+	System.out.println("Input an alphabet:");
+
+        // Taking input from console
+        char ch = in.next().charAt(0);
+ 
+	// taking count as 0	
+        int count = 0;
+  
+         // Using switch statement to check whether it is vowel or not
+		switch(ch)  
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+                  // if it is vowel count is incremented to 1
+			count++;  
+		}
+		        if(count==1)  
+			System.out.println("Input character is vowel");
+               // if it is not vowel it checks upper and lower cases in alphabets
+		        else  
+			if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+		        System.out.println("Input character is consonant");
+              // if it is not alphabet it prints invalid data
+			else  
+			System.out.println("Invalid data ");
+		in.close();
+	}
+}
