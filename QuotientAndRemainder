@@ -1,0 +1,16 @@
+public class QuotientAndRemainder 
+{
+	public static void main(String[] args) 
+{
+      //Taking command line argument and parsing string value to integer      
+		int dividend =Integer.parseInt(args[0]); 
+     //Taking command line argument and parsing string value to integer
+		int divisor =Integer.parseInt(args[1]);
+     //calculate reminder
+		int remainder = dividend% divisor;
+     //calculate quotient
+		int quotient = (int)dividend/divisor;
+		System.out.println("Remainder "+remainder);
+		System.out.println("Quotient "+quotient);
+	}
+}
