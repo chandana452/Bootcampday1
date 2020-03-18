@@ -1,0 +1,21 @@
+public class Calender
+{
+public static void main(String[] args)
+{
+java.util.Scanner in= new java.util.Scanner(System.in);
+System.out.println("number of days:");
+//taking number of days
+int days=in.nextInt();
+
+//dividing number of days to years
+int year=days/365;
+
+//dividing to weeks
+int week=(days%365)/7;
+
+//calculating remaining days
+int rem_days=((days%365)%7);
+System.out.println("number of years:"+year+",number of weeks:"+week+",and number of days:"+rem_days);
+in.close();
+}
+}
